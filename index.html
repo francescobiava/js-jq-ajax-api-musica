@@ -15,6 +15,16 @@
             </div>
         </header>
 
+        <div class="genres">
+            <select name="genres" id="genres-choice">
+                <option value="All" selected>All</option>
+                <option value="Rock">Rock</option>
+                <option value="Metal">Metal</option>
+                <option value="Pop">Pop</option>
+                <option value="Jazz">Jazz</option>
+            </select>
+        </div>
+
         <div class="cds-container container">
 
         </div>
@@ -26,6 +36,7 @@
                 <h3>{{title}}</h3>
                 <span class="author">{{author}}</span>
                 <span class="year">{{year}}</span>
+                <span class="genre">{{genre}}</span>
             </div>
         </script>
         

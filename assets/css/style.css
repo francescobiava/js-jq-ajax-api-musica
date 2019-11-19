@@ -26,6 +26,22 @@ header img {
     margin-top: 10px;
 }
 
+#genres-choice {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+}
+
+#filter {
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 2px;
+}
+
 .cds-container {
     display: flex;
     justify-content: center;
@@ -65,4 +81,9 @@ header img {
 
 .cd span.year {
     color: grey;
+}
+
+.cd span.genre {
+    color: grey;
+    margin-top: 15px;
 }
