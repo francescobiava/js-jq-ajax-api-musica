@@ -32,17 +32,10 @@ function showCd () {
 function extractData(item) {
 	// condizione in base al filtro
 	if (genreSelected == 'All' || genreSelected == item.genre) {
-		// estraggo titolo, autore e anno
-		var posterCd = item.poster;
-		var titleCd = item.title;
-		var authorCd = item.author;
-		var yearCd = item.year;
-		var genreCd = item.genre;
-		// li inserisco nel template e lo appendo in pagina
+		// prendo l'oggetto, lo inserisco nel template e appendo in pagina
 		var source = $('#cd-template').html();
 		var template = Handlebars.compile(source);
-		var context = {poster: posterCd, title: titleCd, author: authorCd, year: yearCd, genre: genreCd};
-		var html = template(context);
+		var html = template(item);
 		$('.cds-container').append(html);
 	};
 }
