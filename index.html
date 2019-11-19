@@ -16,16 +16,20 @@
         </header>
 
         <div class="cds-container container">
-            <!-- Disco ad esempio -->
-            <div class="cd">
-                <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Ten_Summoner%27s_Tales.jpg" alt="">
-                <h3>Ten's Summoners Tales</h3>
-                <span class="author">Sting</span>
-                <span class="year">1993</span>
-            </div>
+
         </div>
+
+        <!-- template CD -->
+        <script id="cd-template" type="text/x-handlebars-template">
+            <div class="cd">
+                <img src="" alt="">
+                <h3>{{title}}</h3>
+                <span class="author">{{author}}</span>
+                <span class="year">{{year}}</span>
+            </div>
+        </script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.amd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="assets/js/main.js" charset="utf-8"></script>
     </body>
